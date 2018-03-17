@@ -8,7 +8,7 @@ class Animals:
         self.weight = weight
         self.produce_a_product = produce_a_product
         self.growth_factor = growth_factor
-        print("экземпляр класс создан")
+        print("Экземпляр класс создан")
 
     def graze(self, value):  # фунция пастись value дней
         print("Животное отправили пастись и наращивать массу")
@@ -16,7 +16,9 @@ class Animals:
         print("Масса: {} кг".format(self.weight))
 
     def description_animals(self):
-        print("Животное {} массой {} кг., дает продукт {} с коэфф. роста {} кг в день".format(self.name, self.weight, self.produce_a_product, self.growth_factor))
+        print("Животное {} массой {} кг., дает продукт {} с коэфф. роста {} кг в день".format(self.name, self.weight,
+                                                                                              self.produce_a_product,
+                                                                                              self.growth_factor))
 
 
 # Класс парнокопытнах для Коровы, козы, овцы, свиньи
@@ -27,7 +29,7 @@ class Artiodactyl(Animals):
         super().graze(value)
 
 
-# класс коровы на основе класса парнокопытных
+# Класс коровы на основе класса парнокопытных
 class Cow(Artiodactyl):
     name = "Корова"
 
@@ -36,7 +38,7 @@ class Cow(Artiodactyl):
         super().graze(value)
 
 
-# класс козы на основе класса парнокопытных
+# Класс козы на основе класса парнокопытных
 class Goat(Artiodactyl):
     name = "Коза"
 
@@ -45,7 +47,7 @@ class Goat(Artiodactyl):
         super().graze(value)
 
 
-# класс овцы на основе класса парнокопытных
+# Класс овцы на основе класса парнокопытных
 class Sheep(Artiodactyl):
     name = "Овца"
 
@@ -54,7 +56,7 @@ class Sheep(Artiodactyl):
         super().graze(value)
 
 
-# класс свиньи на основе класса парнокопытных
+# Класс свиньи на основе класса парнокопытных
 class Pig(Artiodactyl):
     name = "Свинья"
 
